@@ -99,7 +99,7 @@ def chanel_exclusive(update, context):
 
 if __name__ == '__main__':
     
-    token = os.environ['TOKEN']
+    token = os.environ['TELEGRAM_TOKEN']
 
     bot = telegram.Bot(token=token)
 
