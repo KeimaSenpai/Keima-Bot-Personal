@@ -16,8 +16,9 @@ def start(update, context):
         ),
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(text='🐺Canal🐺', url='https://t.me/keimasenpai')],
-            [InlineKeyboardButton(text='⛰X Minecraft Archive📦', url='https://t.me/x_minecraft_archive/')],
-            [InlineKeyboardButton(text='📃Página web Personal', url='https://keimasenpaiyt.wordpress.com/')]
+            [InlineKeyboardButton(text='⛰X Minecraft', url='https://t.me/x_minecraft_channel')],
+            [InlineKeyboardButton(text='📃Página web Personal', url='https://keimasenpaiyt.wordpress.com/')],
+            [InlineKeyboardButton(text='🛍Tienda Web ', url='https://vipshopks.wordpress.com/')]
         ])
     )
 
@@ -86,13 +87,12 @@ def id_user(update, context):
 def chanel_exclusive(update, context):
     id_usuario = update.effective_user['id']
     links_chanel = '*🎴Lista de Canales más buscados en Telegram🎴*'+'\n\n'
-    links_chanel+= '*[X Anime ®](https://t.me/+HiTRqrosEiE2N2Qx)*'+'\n'
-    links_chanel+= '*[X Minecraft ®](https://t.me/+8wE1nWN6g684YjAx)*'+'\n\n'
-    links_chanel+= '*🎁Canales que gastan megas🎁*'+'\n'
+    links_chanel+= '*[X Anime ®](https://t.me/x_anime_channel)*'+'\n'
+    links_chanel+= '*[X Minecraft ®](https://t.me/x_minecraft_channel)*'+'\n'
+    links_chanel+= '*[X Minecraft Archive ®](https://t.me/x_minecraft_archive)*'+'\n'
     links_chanel+= '*[X Wallpapers ®](https://t.me/+SMcLzJhMEwJlZGNh)*'+'\n'
-    links_chanel+= '*[DISNEY STAR NETFLIX COMBO](https://t.me/+dnu0gGYWiTFhNzAx)*'+'\n'
-    links_chanel+= '*[ESTRENOS 2022 DE NETFLIX](http://t.me/joinchat/SmS-v4J_RNHda9r6)*'+'\n'
-    links_chanel+= '*[APLICACIONES 100% HACKEADAS](https://t.me/+P3QPUpYX0ob4MSsp)*'+'\n'
+    links_chanel+= '*[X Twitch ®](https://t.me/x_twitch_channel)*'+'\n'
+    links_chanel+= '*[🛍️ X Shop VIP ®](https://t.me/shop_vip_shannel)*'+'\n'
     context.bot.sendMessage(chat_id=id_usuario, text=links_chanel, parse_mode="MarkdownV2", disable_web_page_preview=True)
 
     
