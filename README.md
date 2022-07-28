@@ -1,6 +1,6 @@
 # Keima Senpai Creador del bot
 
-# El es capaz de ahcer algunas cosas como:
+# El es capaz de hacer algunas cosas como:
 
 -Podrá poner link de sus canales etc.
 
