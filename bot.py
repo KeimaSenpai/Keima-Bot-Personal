@@ -75,12 +75,12 @@ def report_problem(update, context):
             ) 
 
 def id_user(update, context):
-    id_usuario = update.effective_user['id']
     name = update.effective_user['first_name']
     user_name = update.effective_user['username']
+    id_usuario = update.effective_user['id']
     context.bot.sendMessage(chat_id = id_usuario, 
     parse_mode="MarkdownV2", 
-    text=f'*Nombre*: *{name}*\n*Username*: @{user_name}\n*Su id es*: `{id_usuario}`'
+    text=f'*Nombre*: {name}\n*Username*: @{user_name}\n*Su id es*: `{id_usuario}`'
     
     
     )
