@@ -80,7 +80,7 @@ def id_user(update, context):
     user_name = update.effective_user['username']
     context.bot.sendMessage(chat_id = id_usuario, 
     parse_mode="MarkdownV2", 
-    text=f'*Nombre*: *{first_name}*\n' + f'*Username*: @{username}\n' + f'*Su id es*: `{id_usuario}`'
+    text=f'*Nombre*: *{first_name}*\n *Username*: @{username}\n *Su id es*: `{id_usuario}`'
     
     
     )
