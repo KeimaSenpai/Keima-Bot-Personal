@@ -56,7 +56,7 @@ def report_problem(update, context):
         name = update.effective_user['first_name']
         user_name = update.effective_user['username']
 
-        if update.message.text == '/sugerir':
+        if update.message.text == '/sugerir ':
             context.bot.send_message(
                 chat_id='1618347551',
                 text=str(text).replace('/sugerir', f'Nombre: {name}\nNombre de usuario: @{user_name}\n')
@@ -76,7 +76,7 @@ def report_problem(update, context):
 
 def id_user(update, context):
     id_usuario = update.effective_user['id']
-    context.bot.sendMessage(chat_id= id_usuario, 
+    context.bot.sendMessage(chat_id = id_usuario, 
     parse_mode="MarkdownV2", 
     text=f'*Su id es*: `{id_usuario}`'
     
