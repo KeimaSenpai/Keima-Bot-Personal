@@ -16,8 +16,8 @@ def start(update, context):
         ),
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(text='🐺Canal🐺', url='https://t.me/keimasenpai')],
-            [InlineKeyboardButton(text='⛰X Minecraft', url='https://t.me/x_minecraft_channel')],
-            [InlineKeyboardButton(text='📃Página web Personal', url='https://keimasenpaiyt.wordpress.com/')],
+            [InlineKeyboardButton(text='⛰X Minecraft', url='https://t.me/+8wE1nWN6g684YjAx')],
+            [InlineKeyboardButton(text='📃Página web Personal', url='https://keima-senpai.vercel.app/')],
             [InlineKeyboardButton(text='🛍Tienda Web ', url='https://vipshopks.wordpress.com/')]
         ])
     )
@@ -43,10 +43,10 @@ def help_command(update, context):
     id_usuario = update.effective_user['id']
     texto_ayuda = '*👩🏻‍💻Hola este es el bot [Keima Senpai](https://t.me/keimasenpai)👩🏻‍💻*'+'\n\n\n'
     texto_ayuda+= '*👨🏻‍🏫Los comandos son los siguientes*:'+'\n\n'
-    texto_ayuda+= '`/xdownloader` Este comando sirve para obtener los link de descarga de la app'+'\n\n'
-    texto_ayuda+= '`/sugerir texto` Con este comando envia un problema o pedido al creador del bot'+'\n\n'
-    texto_ayuda+= '`/id` Este comando te da tu id de usuario'+'\n\n'
-    texto_ayuda+= '`/chanel` Te muestra una lista de Canales exclusivos'+'\n\n'
+    texto_ayuda+= '/xdownloader Este comando sirve para obtener los link de descarga de la app'+'\n\n'
+    texto_ayuda+= '`#sugerir texto` Con este comando envia un problema o pedido al creador del bot'+'\n\n'
+    texto_ayuda+= '/id Este comando te da tu id de usuario'+'\n\n'
+    texto_ayuda+= '/chanel Te muestra una lista de Canales exclusivos'+'\n\n'
     texto_ayuda+= '*Ya con esto es suficiente*'+'\n'
     context.bot.sendMessage(chat_id=id_usuario, text=texto_ayuda, parse_mode="MarkdownV2", disable_web_page_preview=True)
 
@@ -69,8 +69,8 @@ def report_problem(update, context):
             update.message.reply_text(
 
                 text=(
-                    '✅Se envío satisfactoriamente la sugerencia✅\n\n'
-                    f'{name} no se preocupe el admin lo soluciona en minutos o en caso de ser pedido vip lo contacta enseguida'
+                    '✅Se envío satisfactoriamente la sugerencia✅\n\n'f'🎟{text}\n'
+                    f'🎉{name} Gracias por la sugerencia'
                 )
             ) 
 
