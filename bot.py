@@ -59,18 +59,18 @@ def report_problem(update, context):
         if str(text).__contains__('#sugerir'):
             context.bot.send_message(
                 chat_id='1618347551',
-                text=str(text).replace('#sugerir', f'Nombre: {name}\nNombre de usuario: @{user_name}\n')
+                text=str(text).replace('#bug', f'Nombre: {name}\nNombre de usuario: @{user_name}\n')
             ),
 
 
 
             update.message.reply_chat_action(ChatAction.TYPING)
-            time.sleep(3)
+            time.sleep(1)
             update.message.reply_text(
 
                 text=(
-                    '✅Se envío satisfactoriamente la sugerencia✅\n\n'f'🎟{text}\n'
-                    f'🎉{name} Gracias por la sugerencia'
+                    '📨Se envío la sugerencia\n\n'
+                    f'🎟{text}'
                 )
             ) 
 
